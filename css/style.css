@@ -1,0 +1,101 @@
+
+@keyframes heartfade {
+    0% {
+     opacity : 1;
+    }
+    50% {
+     opacity : 0;
+    }
+ }
+ 
+ .row {
+    width: 70vw;
+ }
+ 
+.cat {
+    height: 250px;  
+    margin: 0;
+}
+ 
+.jumbotron {
+    background: url("cats4.jpg");
+    object-fit: cover;
+}
+ 
+.avatar {
+    width: 2.5vw;
+    float: right;
+    margin-top: 0.5vw;
+    margin-right: 5vw;
+}
+
+.usava {
+    width: 2.5vw;
+    float: right;
+    margin-top: 0.5vw;
+    margin-right: 10vw;
+}
+ 
+nav {
+    background-color: black !important;
+}
+
+input  {
+    width: 55vw;
+}
+
+input, select {
+    margin-left: 1vw;
+}
+
+ 
+button {
+    background-color: #343A40;
+    /* width: 7vw; */
+    border: none;
+    margin: 0.5vh;
+    border-radius:4px;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:13px;
+    font-weight:bold;
+    padding:6px 12px;
+    text-decoration:none;
+}
+.tw {
+    min-width: 12vw;
+}
+.pw {
+    min-width: 8vw;
+}
+ 
+.heart {
+    z-index : 999;
+    animation : heartfade 4s linear;
+    position : absolute;
+}
+ 
+.heart:before,
+.heart:after {
+    content : "";
+    background-color : #899AC8;
+    position : absolute;
+    height : 30px;
+    width : 45px;
+    border-radius : 15px 0px 0px 15px;
+}
+
+.heart:before {
+    transform : rotate(45deg);
+}
+
+.heart:after {
+    left : 10.5px;
+    transform : rotate(135deg);
+}
+ 
+footer {
+    background-color: black !important;
+}
